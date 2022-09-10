@@ -1,0 +1,284 @@
+body {
+  background-image: url("ignore/wall2.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+header {
+  margin: none;
+}
+
+#searchbar {
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 80%;
+}
+/*
+input[type=text] {
+  width: 30%;
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+}*/
+
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: cursive;
+}
+
+.page {
+  margin-bottom: 5%;
+}
+
+#DateDuJour {
+  font-size: 20px;
+  text-shadow: 0 0 3px #e7e2e2, 0 0 5px #e0e0e7;
+}
+
+.list {
+  margin-left: 5%;
+  font-size: 25px;
+  font-family: cursive;
+  color: #06B9AE;
+}
+
+.uwu {
+  margin-bottom: 2%;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 30px;
+  text-shadow: 0 0 3px #e8e0e0, 0 0 5px #dfdff1;
+}
+
+.reseaux {
+  display: block;
+  margin-bottom: 100px;
+}
+
+footer {
+  text-align: center;
+  margin: auto;
+}
+
+.titre {
+  margin-bottom: 1%;
+  font-family: cursive;
+  font-size: 30px;
+  color: #A57E8F;
+}
+
+.Mee {
+  font-size: 20px;
+  font-family: monospace;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#listee {
+  padding: 10px 30px;
+  background: transparent;
+  border: none;
+  color: #06B9AE;
+  font-size: 20px;
+}
+
+/* CSS POUR LE MENU DEROULANT */
+
+td:hover {
+  background-color: rgb(170, 206, 238);
+}
+
+thead {
+  height: 70px;
+  border: 1px solid;
+}
+
+td {
+  height: 90px;
+  border: 1px solid;
+}
+
+:root {
+  --hauteur-menu: 60px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Montserrat, sans-serif;
+}
+
+nav {
+  width: 100%;
+  font-size: 18px;
+  position: sticky;
+  top: 0;
+  text-shadow: 0 0 3px #524747d6;
+  margin-bottom: 4%;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav>ul {
+  display: flex;
+  text-align: center;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  height: var(--hauteur-menu);
+}
+
+nav>ul>li {
+  background-color: white;
+  position: relative;
+  height: 100%;
+  flex: 1;
+}
+
+nav>ul>li>a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-deroulant>a:after {
+  content: '❯';
+  font-size: 15px;
+  margin-left: 7px;
+  display: inline-block;
+}
+
+.sous-menu {
+  margin-top: var(--hauteur-menu);
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  border-radius: 2px;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.sous-menu>li>a {
+  height: 50px;
+  padding-left: 20px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+nav>ul>li:hover>a {
+  color: #7ba4f1;
+}
+
+.sous-menu>li:hover {
+  background-color: rgba(33, 105, 236, 0.3);
+}
+
+.sous-menu>li:hover>a {
+  color: white;
+}
+
+
+@keyframes rotationFleche {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.menu-deroulant:hover>a:after {
+  animation: rotationFleche 0.2s linear forwards;
+}
+
+@keyframes apparitionSousMenu {
+  0% {
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
+    border-top: 3px solid #2169EC;
+  }
+
+  30% {
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  100% {
+    max-height: 50em;
+    border-top: 3px solid #2169EC;
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.menu-deroulant:hover>.sous-menu {
+  animation: apparitionSousMenu 1s forwards;
+}
+
+/** css pour la partie avis **/
+
+.recom {
+  margin-bottom: 10%;
+  font-family: cursive;
+  font-size: 150%;
+  text-shadow: 0 0 3px #e8e1e1, 0 0 5px #dfdff1;
+}
+
+#name {
+  padding: 10px 30px;
+}
+
+#opinion {
+  padding: 10px 30px;
+}
+
+.blockNamOpi {
+  display: block;
+  text-align: center;
+  width: 60%;
+}
+
+.namOpi {
+  display: block;
+  margin-top: 2%;
+  text-align: right;
+}
+
+#button {
+  background-color: #06B9AE;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 2%;
+  border-radius: 12px;
+  box-shadow: 0 10px 5px #666;
+  display: block;
+  position: relative;
+  left: 80%;
+}
+
+#button:active {
+  background-color: #228a83;
+  box-shadow: 0 5px 5px #666;
+  transform: translateY(4px);
+}
+
+.wow {
+  display: block;
+  text-align: center;
+
+}
